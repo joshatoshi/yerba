@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yerbacorp Retro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+  <img src="assets/logo_black.svg" alt="Company Logo" class="navbar-logo">
+  <div class="menu-item" onclick="playSound('click') || openWindow('aboutWindow')">About Us</div>
+  <div class="menu-item" onclick="playSound('click') || openWindow('contactWindow')">Contact</div>
+  </div>
+s
+  <div class="desktop">
+    <div class="icon" onclick="playSound('click') || openWindow('yerbacorpWindow')">
+      <img src="assets/logo_black.svg" alt="Yerbacorp Icon">
+      <p>Yerbacorp.exe</p>
+    </div>
+  </div>
+
+  <!-- About Us Window -->
+  <div id="aboutWindow" class="window" draggable="false">
+    <div class="window-header" onmousedown="startDrag(event, 'aboutWindow')">
+      <span>About Us</span>
+      <button onclick="playSound('close') || closeWindow('aboutWindow')">✖</button>
+    </div>
+    <div class="window-content">
+      <p>
+        At Yerbacorp, we thrive on the energy of innovation and the spark of discovery.
+      </p>
+      <p>
+        Just as the Yerba leaf revitalizes the body, we energize minds through cutting-edge technology, 
+        dynamic problem-solving, and forward-thinking solutions.
+      </p>
+      <p>
+        We believe in staying sharp, active, and engaged—pushing boundaries to create software that drives progress and excites the imagination.
+      </p>
+      <p> 
+        Our team is passionate, adaptable, and relentless in pursuit of smarter, more efficient ways to empower businesses and individuals alike.
+      </p>
+      <p>
+        Whether we’re designing sleek digital interfaces, crafting efficient back-end systems, or reimagining what’s possible, our work isn’t just about technology
+      </p>
+      <p>
+        —it’s about stimulating ideas, fueling growth, and staying on the pulse of a constantly evolving world.
+      </p>
+      <p>
+        Join us as we build tomorrow, today.
+      </p>
+    </div>
+  </div>
+
+  <!-- Contact Us Window -->
+  <div id="contactWindow" class="window" draggable="false">
+    <div class="window-header" onmousedown="startDrag(event, 'contactWindow')">
+      <span>Contact Us</span>
+      <button onclick="playSound('close') || closeWindow('contactWindow')">✖</button>
+    </div>
+    <div class="window-content">
+      <p>Email: contact@yerbacorp.com</p>
+    </div>
+  </div>
+
+  <!-- Yerbacorp Project Window -->
+  <div id="yerbacorpWindow" class="window" draggable="false">
+    <div class="window-header" onmousedown="startDrag(event, 'yerbacorpWindow')">
+      <span>Yerbacorp Projects: </span>
+      <button onclick="playSound('close') || closeWindow('yerbacorpWindow')">✖</button>
+    </div>
+    <div class="window-content">
+      <p>C̴͈̈́͛ợ̵̲̋̇ṃ̴̺͔̤̄͒̿i̵̟͖͆̑ń̷̫͓̩͎̿́ͅg̷̢̣̜̈́̎ ̸͍̼̦̖̪͐̇S̷̡̯̙̻̊͐̉͜ȏ̷͇͇̑o̶̲͍͉̲̮͘n̵͕͔̈́̈́͛͗͜.̸͎͎͙̐̀̌.̸̺̖̮̮̍͐̓͋̏͜!̸̙̭̘̈́̓</p>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="assets/open.mp3"></audio>
+  <audio id="closeSound" src="assets/close.mp3"></audio>
+
+  <!-- Footer -->
+  <div class="footer">
+    Yerbacorp Desktop 1990
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
