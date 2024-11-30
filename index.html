@@ -16,11 +16,22 @@
   </div>
 s
   <div class="desktop">
-    <div class="icon" onclick="playSound('click') || openWindow('yerbacorpWindow')">
-      <img src="assets/logo_black.svg" alt="Yerbacorp Icon">
-      <p>Yerbacorp.exe</p>
+    <div class="icon" onclick="playSound('click') || openWindow('webWindow')">
+      <img src="assets/web_button.png" alt="Web3 Icon">
+      <p>Web3</p>
     </div>
-  </div>
+    <div class="icon" onclick="playSound('click') || openWindow('pcWindow')">
+      <img src="assets/pc_button.png" alt="PC Icon">
+      <p>Mainframe</p>
+    </div>
+    <div class="icon" onclick="playSound('click') || openWindow('filesWindow')">
+      <img src="assets/files_button.png" alt="Files Icon">
+      <p>Files</p>
+    </div>
+    <div class="icon" onclick="playSound('click') || openWindow('yerbacorpWindow')">
+      <img src="assets/logo_button.png"" alt="Newleaf Icon">
+      <p>Yerba.exe</p>
+    </div>
 
   <!-- About Us Window -->
   <div id="aboutWindow" class="window" draggable="false">
@@ -65,19 +76,51 @@ s
     </div>
   </div>
 
+  <!-- Web Window -->
+  <div id="webWindow" class="window" draggable="false">
+    <div class="window-header" onmousedown="startDrag(event, 'webWindow')">
+      <span>0x123abc456def789... CID: zdj... : </span>
+      <button onclick="playSound('close') || closeWindow('webWindow')">✖</button>
+    </div>
+    <div class="window-content">
+      <p>C̴̹͂̆o̶̟̗̠͂̑̅͌m̸͓͚̰̅͌i̶̲͎̪̋ṇ̵͕̬̟̌g̴̡̠̃̎̆̋ ̵͙͖͖͗̓Ṡ̷̢̮͔̠̲ȍ̵̝̹̦̯̰o̶̲̽͊͂̚͠ͅn̵̝̺̻͔̩̅͂͋</p>
+    </div>
+  </div>
+
+  <!-- Mainframe Window -->
+  <div id="pcWindow" class="window" draggable="false">
+    <div class="window-header" onmousedown="startDrag(event, 'pcWindow')">
+      <span>G://Mainframe/ < - - Accessing Drive - - > : </span>
+      <button onclick="playSound('close') || closeWindow('pcWindow')">✖</button>
+    </div>
+    <div class="window-content">
+      <p>C̸̝̯͉͕̭̹̈́̒̚ọ̸̲̜̪́̀͆̀͒͜m̴̨͇̗̪̻̯͕̃į̸͔͔͍̱͌͂̓͒n̴̬͓̮̫̼̞͆͜g̴͔̞͉̱͇̽̂͝ ̶̧̗͈̼̒̇̔̓́͐Ş̷͕͉̯̹͈̄̄͐͝o̴͊̿͜ǫ̸͍̠̺̓̎̈́͆̿̉͂̍n̷̛̞̗͖̹̙̉̀͂̈͊͂͝</p>
+    </div>
+  </div>
+
+  <!-- Files Window -->
+  <div id="filesWindow" class="window" draggable="false">
+    <div class="window-header" onmousedown="startDrag(event, 'filesWindow')">
+      <span>G://Files/Projects/: </span>
+      <button onclick="playSound('close') || closeWindow('filesWindow')">✖</button>
+    </div>
+    <div class="window-content">
+      <p>C̵͉̮̓͝ͅo̴̯̥͇̦͇̙̐̐̄m̸̜̲̜͕͑i̷̞̻̲̖̿͌͗̚̕͠ǹ̸̨̻̼͔g̸͙̟̿͌͜ ̶̧̢͚̰̝̯̾Ṡ̸̲̯͙̬͘͠ó̵͕o̸̳͋̽͜͝ṇ̴̢͙̦͙̌̽̈́</p>
+    </div>
+  </div>
+  <audio id="clickSound" src="assets/open.mp3"></audio>
+  <audio id="closeSound" src="assets/close.mp3"></audio>
+
   <!-- Yerbacorp Project Window -->
   <div id="yerbacorpWindow" class="window" draggable="false">
     <div class="window-header" onmousedown="startDrag(event, 'yerbacorpWindow')">
-      <span>Yerbacorp Projects: </span>
+      <span>G://YerbaDev/: </span>
       <button onclick="playSound('close') || closeWindow('yerbacorpWindow')">✖</button>
     </div>
     <div class="window-content">
       <p>C̴͈̈́͛ợ̵̲̋̇ṃ̴̺͔̤̄͒̿i̵̟͖͆̑ń̷̫͓̩͎̿́ͅg̷̢̣̜̈́̎ ̸͍̼̦̖̪͐̇S̷̡̯̙̻̊͐̉͜ȏ̷͇͇̑o̶̲͍͉̲̮͘n̵͕͔̈́̈́͛͗͜.̸͎͎͙̐̀̌.̸̺̖̮̮̍͐̓͋̏͜!̸̙̭̘̈́̓</p>
     </div>
   </div>
-
-  <audio id="clickSound" src="assets/open.mp3"></audio>
-  <audio id="closeSound" src="assets/close.mp3"></audio>
 
   <!-- Footer -->
   <div class="footer">

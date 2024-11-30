@@ -50,16 +50,31 @@ body {
   padding-top: 50px;
 }
 
+.deskop:hover {
+  cursor: url('assets/pointer.svg'), pointer;
+}
+
 .icon {
   text-align: center;
   margin: 10px;
   cursor: pointer;
+  width: 100px; /* Ensures all icons have the same width */
 }
+
 
 .icon img {
   width: 64px;
   height: 64px;
-  border: 2px solid #000;
+  border: 2px solid #008080;
+}
+
+.icon img:hover {
+  border: 2px solid #0827f5;
+}
+
+.icon p {
+  margin: 5px 0 0 0;
+  /*word-wrap: break-word; /* Ensure long text wraps */
 }
 
 .window {
