@@ -3,10 +3,11 @@ let offsetX = 0, offsetY = 0;
 
 function openWindow(id) {
   const windowElement = document.getElementById(id);
+  const navElement = document.getElementById('navbar');
 
   // Set random position for the window
-  const randomX = Math.floor(Math.random() * (window.innerWidth * 0.7 - windowElement.offsetWidth) + window.innerWidth * 0.1);
-  const randomY = Math.floor(Math.random() * (window.innerHeight * 0.7 - windowElement.offsetHeight - 50)); // Adjusted for navbar
+  const randomX = Math.max(Math.floor(Math.random() * ((window.innerWidth * 0.8) - windowElement.offsetWidth) ),windowElement.offsetWidth);
+  const randomY = Math.max(Math.floor(Math.random() * ((window.innerHeight * 0.8) - windowElement.offsetHeight )),navbar.offsetHeight); 
 
   windowElement.style.left = `${randomX}px`;
   windowElement.style.top = `${randomY}px`;
